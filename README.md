@@ -2,24 +2,31 @@ The following is the intruction for using all files in this repository:
 
 The repository contains the following items:
 - "Report.ipynb": write ups for introduction and background of the project;
-- "LDA_VIEM": Package/Source code for variational inference algorithm;
-- "LDApackage": Package/Source code for the Gibbs Sampling algorithm;
+- "LDApackage": Package/Source code for both the Gibbs Sampling and EM algorithms;
 - Data files:
     - "simulated.txt": simulated data;
     - "realdata.txt": real life data;
     - "stopword.txt": a list of stopwords to be removed from text while preprocessing;
 - "setup.py": to initiate the "LDApackage" for use;
-              to initiate the "VI_EM_LDA.py" for use;
-- "Simulated Data.ipynb": test codes for simulated data and write ups for this example;
+- "Simulated+Data.ipynb": test codes for simulated data and write ups for this example;
     - "VIEM_Sim_topwords.txt": results from VIEM on the simulated data;
     - "Gibbs_Sim_topwords.dat": results from Gibbs Sampling on the simulated data;
-- "Real Data.ipynb": test codes for real data and write ups for this example;
+- "Real+Data.ipynb": test codes for real data and write ups for this example;
     - "VIEM_RD_topwords.txt": results from VIEM on the simulated data;
     - "Gibbs_RD_topwords.dat": results from Gibbs Sampling on the simulated data;
 - "Comparison.ipynb": comparative studies with other algorithms and write ups for this part;
+    - "simu": Unix Executable file for simulated data to be used in Mixture of Unigrams model;
+    - "GibbsSamplingDMM.py", "pDMM.py": source code for Mixture of Unigrams model;
+    - "output": folder for Mixture of Unigrams model output;
+- Result files:
+    - "VIEM_Sim_topwords.txt": list of top words and topics from the simulated data with EM;
+    - "VIEM_RD_topwords.txt": list of top words and topics from the real data with EM;
+    - "Gibbs_Sim_topwords.dat": list of top words and topics from the simulated data with Gibbs Sampling;
+    - "Gibbs_RD_topwords.dat": list of top words and topics from the real data with Gibbs Sampling;
 - "README.md": this file, instructions on the repository;
 - "license.md": open source license.
 
+***Write ups for each example and comparative studies, see the ipynb files of the specific examples.
 
 1. To access the source code:
 In the "LDApackage" folder, you will have access to the package with Gibbs Sampling method. You can also find the implementation with variational inference in "LDA_VIEM" folder.
@@ -28,7 +35,7 @@ In the "LDApackage" folder, you will have access to the package with Gibbs Sampl
 All text files for examples are in the same directory as codes and write ups. Please see section above for the specific file names and contents.
 
 3. To reproduce the results:<br>
-***Gibbs Sampling: all result files, after running the code, would be saved as files named "topwords.dat". Each time of re-running or switching data file, the previous results would be overwritten. To keep the results, please make sure you rename or save the previous .dat file before re-running the code.
+***Gibbs Sampling: all result files, after running the code, would be saved as files named "topwords.dat". Each time of re-running or switching data file, the previous results would be overwritten. To keep the former results, please make sure you rename or save the previous .dat file before re-running the code. If parameter values changed, please restart kernel and re-run all codes.
 
 ***Variational Inference + EM algorithm: all result files, after running the code, would be saved as files named "topwords.txt". Each time of re-running or switching data file, the previous results would be overwritten. To keep the results, please make sure you rename or save the previous .txt file before re-running the code.
 
