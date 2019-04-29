@@ -63,7 +63,7 @@ class LDAModel(object):
         self.pred = pred 
         self.topwordsfile = topwordsfile
         #Prior parameter definitions
-        self.K = 5
+        self.K = 10
         self.beta = 0.1
         self.alpha = 0.1
         self.number_iter_times = 100
