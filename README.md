@@ -32,7 +32,7 @@ All text files for examples are in the same directory as codes and write ups. Pl
 3. To reproduce the results:<br>
 ***Gibbs Sampling: all result files, after running the code, would be saved as files named "topwords.dat". Each time of re-running or switching data file, the previous results would be overwritten. To keep the former results, please make sure you rename or save the previous .dat file before re-running the code. If parameter values changed, please restart kernel and re-run all codes.
 
-***Variational Inference + EM algorithm: all result files, after running the code, would be saved as files named "topwords.txt". Each time of re-running or switching data file, the previous results would be overwritten. To keep the results, please make sure you rename or save the previous .txt file before re-running the code.
+***Variational Inference + EM algorithm: all result files, after running the code, would be saved as files named "VIEM_RD_topwords.txt". Each time of re-running or switching data file, the previous results would be overwritten. To keep the results, please make sure you rename or save the previous .txt file before re-running the code.
 
 4. To change parameters:<br>
 ***Gibbs Sampling: to alter the number of topics/top words generated, go to "__init__.py" under "LDApackages" folder and change the parameter under the initialization function in the LDAModel object. self.K is the number of topics and self.twords is the number of top words under each topic.
