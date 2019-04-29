@@ -18,11 +18,6 @@ The repository contains the following items:
     - "simu": Unix Executable file for simulated data to be used in Mixture of Unigrams model;
     - "GibbsSamplingDMM.py", "pDMM.py": source code for Mixture of Unigrams model;
     - "output": folder for Mixture of Unigrams model output;
-- Result files:
-    - "VIEM_Sim_topwords.txt": list of top words and topics from the simulated data with EM;
-    - "VIEM_RD_topwords.txt": list of top words and topics from the real data with EM;
-    - "Gibbs_Sim_topwords.dat": list of top words and topics from the simulated data with Gibbs Sampling;
-    - "Gibbs_RD_topwords.dat": list of top words and topics from the real data with Gibbs Sampling;
 - "README.md": this file, instructions on the repository;
 - "license.md": open source license.
 
