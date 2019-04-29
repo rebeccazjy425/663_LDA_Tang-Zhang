@@ -156,7 +156,6 @@ Created on Mon Apr 29 11:54:50 2019
 """
 
 import numpy as np
-import codecs
 import jieba
 import re
 import random
