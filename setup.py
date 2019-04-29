@@ -6,5 +6,5 @@ setup(
       author='Xinghong Tang, Jingyi Zhang',
       url='https://github.com/rebeccazjy425/663_LDA_Tang-Zhang.git',
       py_modules = ['LDApackage'],
-      install_requires=['jieba','gensim','nltk','GibbsSamplingDMM']
+      install_requires=['jieba','gensim','nltk']
       )
